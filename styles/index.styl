@@ -1,0 +1,94 @@
+body 
+  color white
+  animation 30s ease-in-out infinite carousel forwards
+
+#overlay 
+  background black
+  animation-delay 1.5s
+
+#index-text-wrap
+  position relative
+  width 100%
+  height 100vh
+
+#greeting
+  z-index 10
+  display flex
+  width 100%
+  padding 5vh 0
+  margin-top -20vh
+
+  background rgba(0,0,0,0.5)
+
+  flex-flow column
+  justify-content center
+  align-items center
+  text-align center
+
+  font-size 2rem
+  opacity 0
+
+  animation 1s ease-in-out 1 fadeIn forwards
+
+  text-shadow 0 0 0.2em black
+
+  h1, p
+    padding 0
+
+  #subtitle
+    font-variant-caps small-caps
+
+#menu
+  background transparent
+  transition background 0.5s
+
+html:not([data-scroll='0']) #menu
+  background rgba(0,0,0,0.5)
+
+#menu, #subtitle
+  opacity 0
+  animation 1s ease-in-out 1.5s 1 fadeIn forwards
+
+#menu .menu-item 
+  animation 1s ease-in-out 2.75s 1 wiggleMenuItem
+
+#menu .menu-item:first-child 
+  animation-delay 2.5s
+
+#menu .menu-item:last-child 
+  animation-delay 3s
+
+#about
+  postion relative
+  box-sizing border-box
+  width 100vw
+  min-height 100vh
+
+  padding-top 2vw
+
+  background white
+  color black
+
+@keyframes carousel {
+  0% {
+    background-image: url("../images/bg1.jpg");
+  }
+  20% {
+    background-image: url("../images/bg1.jpg");
+  }
+  25% {
+    background-image: url("../images/bg2.jpg");
+  }
+  55% {
+    background-image: url("../images/bg2.jpg");
+  }
+  60% {
+    background-image: url("../images/bg3.jpg");
+  }
+  95% {
+    background-image: url("../images/bg3.jpg");
+  }
+  100% {
+    background-image: url("../images/bg1.jpg");
+  }
+}

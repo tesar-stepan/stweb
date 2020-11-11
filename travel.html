@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Stepan Tesar</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script>
+        const debounce = (fn) => {
+            let frame;
+            return (...params) => {
+                if (frame) {
+                    cancelAnimationFrame(frame);
+                }
+                frame = requestAnimationFrame(() => {
+                    fn(...params);
+                });
+            }
+        };
+
+        const storeScroll = () => {
+            document.documentElement.dataset.scroll = window.scrollY;
+        }
+
+        document.addEventListener('scroll', debounce(storeScroll), {passive: true});
+
+        storeScroll();
+    </script></head><body><div id="overlay"></div><div id="menu"><a class="menu-item" href="index.html">ABOUT</a><span>/</span><a class="menu-item active" href="travel.html">TRAVEL</a><span>/</span><a class="menu-item" href="art.html">ART</a></div><div id="content"><h1><span class="logo"><span>S</span><span>T</span></span><span> / TRAVEL</span></h1><p>Lorem ipsum dolor sit amet</p><p>Durum pairus leventi an</p></div><div class="flex-column" id="footer"><div class="flex-column"><p>This webpage uses no cookies, javascript libraries or custom fonts.</p><p>It is responsive, fast and lightweight.</p><p>Only as complex as it needs to be, to do it's job well.</p></div><hr/><div class="logo"><span>S</span><span>T</span></div></div><div id="overlay"></div></body>

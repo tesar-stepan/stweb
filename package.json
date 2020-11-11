@@ -1,0 +1,9 @@
+{
+  "name": "stesar_personal",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "pug": "^3.0.0",
+    "stylus": "^0.54.8"
+  }
+}

@@ -1,0 +1,273 @@
+/* Native tag style reset */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica", Arial, sans-serif;
+}
+h1 {
+  margin: 0;
+}
+p {
+  padding: 4px;
+  margin: 0;
+}
+a,
+a:visited,
+a:active,
+a:hover,
+a:link {
+  text-decoration: none;
+  color: unset;
+}
+hr {
+  padding: 0;
+  margin: 6px;
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 1px;
+  background: #1f1f1f;
+}
+/* Main layout */
+body {
+  background: #fff;
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
+  color: #000;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: 1s ease-out 0.5s 1 overlayFadeOut forwards;
+}
+/* * Header */
+#menu {
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  padding: 1vw;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+}
+.menu-item {
+  cursor: pointer;
+  transition: letter-spacing 0.2s, color 0.2s;
+}
+.menu-item::before {
+  position: relative;
+  top: 0.07em;
+  font-size: 130%;
+  transition: 0.2s;
+  opacity: 0;
+}
+.menu-item:hover {
+  letter-spacing: 0.1em;
+  color: #e00000;
+}
+.menu-item:active,
+.menu-item.active {
+  color: #e00000;
+}
+/* * Content */
+#content {
+  position: relative;
+  min-height: 100%;
+  padding-top: 6vw;
+}
+#content h1 {
+  position: relative;
+  top: 1vw;
+  margin-bottom: 2vw;
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
+#content p {
+  padding: 1vw 2vw;
+}
+#image-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  display: none;
+  opacity: 0;
+}
+/* * Footer */
+#footer {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background: #1f1f1f;
+  color: #c8c8c8;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer hr {
+  background: #343434;
+}
+/* Layout helper classes */
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+/* Logo */
+.logo {
+  display: inline-block;
+  position: relative;
+  letter-spacing: -0.0625em;
+  font-weight: 500;
+}
+.logo > span:first-of-type {
+  position: relative;
+  top: 0.25em;
+}
+.logo > span:last-of-type {
+  position: relative;
+  top: -0.25em;
+}
+@-moz-keyframes overlayFadeOut {
+  99% {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    background: transparent;
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes overlayFadeOut {
+  99% {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    background: transparent;
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+@-o-keyframes overlayFadeOut {
+  99% {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    background: transparent;
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes overlayFadeOut {
+  99% {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    background: transparent;
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes wiggleMenuItem {
+  0% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 0.1em;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+@-webkit-keyframes wiggleMenuItem {
+  0% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 0.1em;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+@-o-keyframes wiggleMenuItem {
+  0% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 0.1em;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+@keyframes wiggleMenuItem {
+  0% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 0.1em;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
