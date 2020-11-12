@@ -84,7 +84,9 @@ body {
 #content {
   position: relative;
   min-height: 100%;
-  padding-top: 6vw;
+  padding: 50px 6vw 6vw 6vw;
+  color: #000;
+  background: #fff;
 }
 #content h1 {
   position: relative;
@@ -95,7 +97,8 @@ body {
   text-align: center;
 }
 #content p {
-  padding: 1vw 2vw;
+  padding: 1vw 0;
+  text-align: justify;
 }
 #image-preloader {
   position: fixed;
