@@ -185,6 +185,7 @@ body {
   min-width: 0;
   max-height: 50vw;
   cursor: pointer;
+  object-fit: cover;
 }
 .row p {
   display: flex;
