@@ -12,37 +12,54 @@ body
         h1
             include includes/logo.html
             span  / ART
-        p.
-            Photography is mainly means of documenting the adventures I find myself on, and you will therefore be able
-            to find most of my pictures in the TRAVEL section.
-        p.
-            I also draw using pencil or charcoal, and paint with acrylic paints, mainly on canvas. Being close to computers
-            and design, I have always experimented with digital art as well. While my photography does not have a particular
-            focus, in my paintings and drawings I mainly capture people.
+        .intro
+            p
+                b.
+                    Hover over any image for a brief description.
+            p.
+                Photography for me is primarily means of documenting the adventures I find myself on. You will therefore
+                find most of my pictures in the TRAVEL section.
+            p.
+                I also draw using pencil or charcoal, and paint with acrylic paints, mainly on canvas. Being close to computers
+                and design, I have always experimented with digital art as well. While my photography does not have any particular
+                focus, in my paintings and drawings I tend to capture people.
+            p
+                i.
+                    Please do not distribute any images on this website without my express authorization.
+
         h2 Traditional Art
         table
-            tr
-                td photo 1
-                td photo 2
-                td photo 3
-            tr
-                td photo 1
-                td photo 2
-                td photo 3
-            tr
-                td photo 1
-                td photo 2
-                td photo 3
+            .row
+                a(href='images/art/paint/danca1.jpg')
+                    img(src='images/art/paint/danca1.jpg' title='"Soar" - Charcoal on paper')
+                a(href='images/art/paint/franta1.jpg')
+                    img(src='images/art/paint/franta1.jpg' title='"Franta" - Acrylic on canvas')
+                a(href='images/art/paint/franta2.jpg')
+                    img(src='images/art/paint/franta2.jpg' title='For scale')
+            .row
+                a(href='images/art/paint/franta2.jpg')
+                    img(src='images/art/paint/kacenka1.jpg' title='"Košonka" - Charcoal on large format paper')
+                a(href='images/art/paint/franta2.jpg')
+                    img(src='images/art/paint/joe.jpg' title='"Joe" - Charcoal on paper')
+                a(href='images/art/paint/franta2.jpg')
+                    img(src='images/art/paint/john.jpg' title='"John" - Charcoal on paper')
+            .row
+                a(href='images/art/paint/franta2.jpg')
+                    img(src='images/art/paint/kacenka2.jpg' title='"Kačenka" - Acrylic on paper')
+                a(href='images/art/paint/franta2.jpg')
+                    img(src='images/art/paint/kacenka3.jpg' title='For scale')
+                a(href='images/art/paint/franta2.jpg')
+                    img(src='images/art/paint/me.jpg' title='"Music" - Charcoal on paper')
+
         h2 Digital Art
         table
-            tr
-                td photo 1
-                td photo 2
-                td photo 3
-            tr
-                td photo 1
-                td photo 2
-                td photo 3
+            .row
+                img(src='images/art/digi/chelsea.png' title='"Chelsea" - Vector painting')
+                img(src='images/art/digi/monicka.jpg' title='"Monička" - Digital drawing')
+                img(src='images/art/digi/noir.png' title='"Noir" - Digital drawing')
+            .row
+                img(src='images/art/digi/chalk.jpg' title='"Chalk" - Digital drawing')
+
         h2 Photography
         table
             tr
@@ -62,3 +79,16 @@ body
                 td photo 2
                 td photo 3
     include includes/footer.html
+
+    //script.
+    //    [...document.getElementsByTagName('img')].forEach(element => {
+    //        element.addEventListener('click', (e) => {
+    //            e = e || window.event; var b = e.keyCode || e.which; if (b == '0' || b == '1')
+    //                window.open(element.src, '_self');
+    //        })
+    //        element.addEventListener('auxclick', (e) => {
+    //            e = e || window.event; var b = e.keyCode || e.which; if (b == '0' || b == '1')
+    //                window.open(element.src, '_blank');
+    //        })
+    //    })
+

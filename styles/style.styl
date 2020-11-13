@@ -52,6 +52,7 @@ body
   background-attachment fixed
 
   color black
+  overflow-x hidden
 
 #overlay
   position fixed
@@ -135,10 +136,28 @@ body
 
     font-size 3rem
     text-align center
+  h2
+    position relative
+    left -6vw
+    width 100vw
 
+    padding 2vw 6vw
+
+    text-align left
+    color white
+
+    background black
   p
     padding 1vw 0
     text-align justify
+
+  hr
+    position absolute
+    width 100vw
+    height 2px
+    left 0
+
+    margin 0
 
 #image-preloader
   position fixed
@@ -213,3 +232,43 @@ body
   > span:last-of-type
     position relative
     top -0.25em
+
+.intro
+  margin-bottom 2vh;
+
+.row
+  display flex
+  justify-content center
+  align-items safe
+
+  width 100%
+  overflow hidden
+
+  a
+    display flex
+    width 100%
+
+    min-height 0
+    min-width 0
+
+    height auto
+
+  img
+    width 100%
+    min-width 0
+    max-height 50vw
+    cursor pointer
+
+  p
+    display flex
+    position relative
+    top 100px
+    width 100%
+
+    font-size smaller
+
+    align-items center
+    justify-content center
+
+    background rgba(0,0,0,0.5)
+    color white
