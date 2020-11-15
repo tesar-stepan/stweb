@@ -1,29 +1,30 @@
-include includes/head.html
-</head>
-body
-    include includes/header.html
-    #menu
-        a.menu-item(href='index.html') ABOUT
-        span /
-        a.menu-item(href='travel.html') TRAVEL
-        span /
-        a.menu-item.active(href='art.html') ART
-    #content
-        h1
-            include includes/logo.html
-            span  / ART
-        .intro
-            p.
-                Hover over any image for a brief description.
-            p
-                i.
-                    Please do not distribute any images on this website without my express authorization.
+doctype strict
+html
 
-        h2 Traditional Art
-        p.
-            I draw using pencil or charcoal, and paint with acrylic paints, mainly on canvas. My main focus is on people - or
-            even more precisely - their faces.
-        table
+    include includes/head.html
+
+    body
+        #menu
+            a.menu-item(href='index.html') ABOUT
+            span /
+            a.menu-item(href='travel.html') TRAVEL
+            span /
+            a.menu-item.active(href='art.html') ART
+        #content
+            h1
+                include includes/logo.html
+                span  / ART
+            .intro
+                p TRADITIONAL ART / DIGITAL ART / PHOTOGRAPHY
+                p Hover over any image for a brief description.
+                p
+                    i.
+                        Please do not distribute any images on this website without my express authorization.
+
+            h2 Traditional Art
+            p.
+                I draw using pencil or charcoal, and paint with acrylic paints, mainly on canvas. My main focus is on people - or
+                even more precisely - their faces.
             .row
                 a(href='images/art/paint/danca1.jpg')
                     img(src='images/art/paint/danca1.jpg' title='"Soar" - Charcoal on paper')
@@ -46,82 +47,107 @@ body
                 a(href='images/art/paint/franta2.jpg')
                     img(src='images/art/paint/me.jpg' title='"Music" - Charcoal on paper')
 
-        h2 Digital Art
-        p.
-            Being always close to computers and design, I have been experimenting with digital art as well.
-        table
+            h2 Digital Art
+            p.
+                Being always close to computers and design, I have been experimenting with digital art as well.
             .row
-                img(src='images/art/digi/chelsea.png' title='"Chelsea" - Vector painting')
-                img(src='images/art/digi/monicka.jpg' title='"Monička" - Digital drawing')
-                img(src='images/art/digi/noir.png' title='"Noir" - Digital drawing')
+                a(href='images/art/digi/chelsea.jpg')
+                    img(src='images/art/digi/chelsea.png' title='"Chelsea" - Vector painting')
+                a(href='images/art/digi/monicka.jpg')
+                    img(src='images/art/digi/monicka.jpg' title='"Monička" - Digital drawing')
+                a(href='images/art/digi/noir.jpg')
+                    img(src='images/art/digi/noir.png' title='"Noir" - Digital drawing')
             .row
-                img(src='images/art/digi/chalk.jpg' title='"Chalk" - Digital drawing')
+                a(href='images/art/digi/chalk.jpg')
+                    img(src='images/art/digi/chalk.jpg' title='"Chalk" - Digital drawing')
 
-        h2 Photography
-        p.
-            Photography for me is primarily means of documenting the adventures I find myself on. This is a selection
-            of some of my favourite pictures, in no particular order.
-        table
+            h2 Photography
+            p.
+                Photography for me is primarily means of documenting the adventures I find myself on. This is a selection
+                of some of my favourite pictures, in no particular order.
             .row
-                img(src='images/art/photos/1.jpg' title='Autumn Road')
-                img(src='images/art/photos/2.jpg' title='John')
-                img(src='images/art/photos/3.jpg' title='Pyrenees from Toulouse')
+                a(href='images/art/photos/1.jpg')
+                    img(src='images/art/photos/1.jpg' title='Autumn Road')
+                a(href='images/art/photos/2.jpg')
+                    img(src='images/art/photos/2.jpg' title='John')
+                a(href='images/art/photos/3.jpg')
+                    img(src='images/art/photos/3.jpg' title='Pyrenees from Toulouse')
             .row
-                img(src='images/art/photos/10.jpg' title='Vanagon')
-                img(src='images/art/photos/11.jpg' title='Rogers Pass')
-                img(src='images/art/photos/12.jpg' title='Nevada')
+                a(href='images/art/photos/10.jpg')
+                    img(src='images/art/photos/10.jpg' title='Vanagon')
+                a(href='images/art/photos/11.jpg')
+                    img(src='images/art/photos/11.jpg' title='Rogers Pass')
+                a(href='images/art/photos/12.jpg')
+                    img(src='images/art/photos/12.jpg' title='Nevada')
             .row
-                img(src='images/art/photos/13.jpg' title='Glacier')
-                img(src='images/art/photos/33.jpg' title='Sunset')
-                img(src='images/art/photos/15.jpg' title='Rappel')
+                a(href='images/art/photos/13.jpg')
+                    img(src='images/art/photos/13.jpg' title='Glacier')
+                a(href='images/art/photos/33.jpg')
+                    img(src='images/art/photos/33.jpg' title='Sunset')
+                a(href='images/art/photos/15.jpg')
+                    img(src='images/art/photos/15.jpg' title='Rappel')
             .row
-                img(src='images/art/photos/19.jpg' title='Eastbound')
-                img(src='images/art/photos/20.jpg' title='Oily Sea')
-                img(src='images/art/photos/21.jpg' title='Dirt Road')
+                a(href='images/art/photos/19.jpg')
+                    img(src='images/art/photos/19.jpg' title='Eastbound')
+                a(href='images/art/photos/20.jpg')
+                    img(src='images/art/photos/20.jpg' title='Oily Sea')
+                a(href='images/art/photos/21.jpg')
+                    img(src='images/art/photos/21.jpg' title='Dirt Road')
             .row
-                img(src='images/art/photos/25.jpg' title='Winter Trees')
-                img(src='images/art/photos/26.jpg' title='Otters')
-                img(src='images/art/photos/27.jpg' title='The Bride')
+                a(href='images/art/photos/25.jpg')
+                    img(src='images/art/photos/25.jpg' title='Winter Trees')
+                a(href='images/art/photos/26.jpg')
+                    img(src='images/art/photos/26.jpg' title='Otters')
+                a(href='images/art/photos/27.jpg')
+                    img(src='images/art/photos/27.jpg' title='The Bride')
             .row
-                img(src='images/art/photos/28.jpg' title='Frozen Lake')
-                img(src='images/art/photos/29.jpg' title='Calm')
-                img(src='images/art/photos/30.jpg' title='Eagle')
+                a(href='images/art/photos/28.jpg')
+                    img(src='images/art/photos/28.jpg' title='Frozen Lake')
+                a(href='images/art/photos/29.jpg')
+                    img(src='images/art/photos/29.jpg' title='Calm')
+                a(href='images/art/photos/30.jpg')
+                    img(src='images/art/photos/30.jpg' title='Eagle')
             .row
-                img(src='images/art/photos/31.jpg' title='Repairs')
-                img(src='images/art/photos/32.jpg' title='Ascend')
-                img(src='images/art/photos/14.jpg' title='Großer Zschirnstein')
+                a(href='images/art/photos/31.jpg')
+                    img(src='images/art/photos/31.jpg' title='Repairs')
+                a(href='images/art/photos/32.jpg')
+                    img(src='images/art/photos/32.jpg' title='Ascend')
+                a(href='images/art/photos/14.jpg')
+                    img(src='images/art/photos/14.jpg' title='Großer Zschirnstein')
             .row
-                img(src='images/art/photos/34.jpg' title='Inversion')
-                img(src='images/art/photos/35.jpg' title='Squasmish')
-                img(src='images/art/photos/36.jpg' title='CB650')
+                a(href='images/art/photos/34.jpg')
+                    img(src='images/art/photos/34.jpg' title='Inversion')
+                a(href='images/art/photos/35.jpg')
+                    img(src='images/art/photos/35.jpg' title='Squasmish')
+                a(href='images/art/photos/36.jpg')
+                    img(src='images/art/photos/36.jpg' title='CB650')
 
             .row
-                img(src='images/art/photos/4.jpg' title='The Chief')
-                img(src='images/art/photos/5.jpg' title='Night Flame')
-                img(src='images/art/photos/6.JPG' title='Ariège')
+                a(href='images/art/photos/4.jpg')
+                    img(src='images/art/photos/4.jpg' title='The Chief')
+                a(href='images/art/photos/5.jpg')
+                    img(src='images/art/photos/5.jpg' title='Night Flame')
+                a(href='images/art/photos/6.JPG')
+                    img(src='images/art/photos/6.JPG' title='Ariège')
             .row
-                img(src='images/art/photos/7.jpg' title='Mountain Goats')
-                img(src='images/art/photos/8.jpg' title='Red Rocks')
-                img(src='images/art/photos/9.jpg' title='Grasslands')
+                a(href='images/art/photos/7.jpg')
+                    img(src='images/art/photos/7.jpg' title='Mountain Goats')
+                a(href='images/art/photos/8.jpg')
+                    img(src='images/art/photos/8.jpg' title='Red Rocks')
+                a(href='images/art/photos/9.jpg')
+                    img(src='images/art/photos/9.jpg' title='Grasslands')
             .row
-                img(src='images/art/photos/16.jpg' title='Yukon')
-                img(src='images/art/photos/17.jpg' title='Snow Sprint')
-                img(src='images/art/photos/18.jpg' title='Midnight Sun - Lofoten')
+                a(href='images/art/photos/16.jpg')
+                    img(src='images/art/photos/16.jpg' title='Yukon')
+                a(href='images/art/photos/17.jpg')
+                    img(src='images/art/photos/17.jpg' title='Snow Sprint')
+                a(href='images/art/photos/18.jpg')
+                    img(src='images/art/photos/18.jpg' title='Midnight Sun - Lofoten')
             .row
-                img(src='images/art/photos/22.jpg' title='Wedding Guests')
-                img(src='images/art/photos/23.jpg' title='Wedding Guests')
-                img(src='images/art/photos/24.jpg' title='Red Rocks')
-    include includes/footer.html
-
-    //script.
-    //    [...document.getElementsByTagName('img')].forEach(element => {
-    //        element.addEventListener('click', (e) => {
-    //            e = e || window.event; var b = e.keyCode || e.which; if (b == '0' || b == '1')
-    //                window.open(element.src, '_self');
-    //        })
-    //        element.addEventListener('auxclick', (e) => {
-    //            e = e || window.event; var b = e.keyCode || e.which; if (b == '0' || b == '1')
-    //                window.open(element.src, '_blank');
-    //        })
-    //    })
-
+                a(href='images/art/photos/22.jpg')
+                    img(src='images/art/photos/22.jpg' title='Wedding Guests')
+                a(href='images/art/photos/23.jpg')
+                    img(src='images/art/photos/23.jpg' title='Wedding Guests')
+                a(href='images/art/photos/24.jpg')
+                    img(src='images/art/photos/24.jpg' title='Red Rocks')
+        include includes/footer.html

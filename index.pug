@@ -1,33 +1,32 @@
-include includes/head.html
-link(rel='stylesheet', href='styles/index.css')
+doctype strict
+html
 
-</head>
-body
-    include includes/header.html
-    #menu
-        a.menu-item.active(href='index.html') ABOUT
-        span /
-        a.menu-item(href='travel.html') TRAVEL
-        span /
-        a.menu-item(href='art.html') ART
+    include includes/head.pug
+    link(rel="stylesheet" href="styles/index.css")
 
+    body
+        #menu
+            a.menu-item.active(href='index.html') ABOUT
+            span /
+            a.menu-item(href='travel.html') TRAVEL
+            span /
+            a.menu-item(href='art.html' title='This section is very heavy on images.') ART
 
-    #index-text-wrap.flex-column
-        #greeting
-            p Hello, I am
-            h1 Stepan Tesar
-            p#subtitle 🞄 Engineer, Adventurer, Human 🞄
+        #index-text-wrap.flex-column
+            #greeting
+                p Hello, I am
+                h1 Stepan Tesar
+                p#subtitle 🞄 Engineer, Adventurer, Human 🞄
 
-    #content
-        h1
-            include includes/logo.html
-            span  / ABOUT
-        p Lorem ipsum dolor sit amet
-        p Durum pairus leventi an
+        #content
+            h1
+                include includes/logo.pug
+                span  / ABOUT
+            p Lorem ipsum dolor sit amet
+            p Durum pairus leventi an
 
-    #image-preloader
-        img(src='images/bg1')
-        img(src='images/bg2')
-        img(src='images/bg3')
-    include includes/footer.html
-
+        #image-preloader
+            img(src='images/bg1')
+            img(src='images/bg2')
+            img(src='images/bg3')
+        include includes/footer.html

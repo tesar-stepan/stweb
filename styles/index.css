@@ -34,10 +34,6 @@ body {
   font-variant-caps: small-caps;
 }
 #menu {
-  background: transparent;
-  transition: background 0.5s;
-}
-html:not([data-scroll='0']) #menu {
   background: rgba(0,0,0,0.5);
 }
 #menu,
