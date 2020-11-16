@@ -8,6 +8,8 @@
     "stylus": "^0.54.8"
   },
   "scripts": {
-    "build": "pug . -o dist/ -P & stylus styles -o dist/styles & copyfiles \"images/**/*\" \"dist/\""
+    "build": "pug . -o dist/ -P & stylus styles -o dist/styles & copyfiles \"images/**/*\" \"dist/\"",
+    "watch-pug": "pug . -o dist/ -P -w",
+    "watch-css": "stylus styles -o dist/styles -w"
   }
 }
