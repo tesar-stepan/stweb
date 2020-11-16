@@ -1,7 +1,7 @@
 doctype strict
 html
 
-    include includes/head.html
+    include includes/head.pug
 
     body
         #menu
@@ -12,7 +12,7 @@ html
             a.menu-item.active(href='art.html') ART
         #content
             h1
-                include includes/logo.html
+                include includes/logo.pug
                 span  / ART
             .intro
                 p TRADITIONAL ART / DIGITAL ART / PHOTOGRAPHY
@@ -150,4 +150,4 @@ html
                     img(src='images/art/photos/23.jpg' title='Wedding Guests')
                 a(href='images/art/photos/24.jpg')
                     img(src='images/art/photos/24.jpg' title='Red Rocks')
-        include includes/footer.html
+        include includes/footer.pug

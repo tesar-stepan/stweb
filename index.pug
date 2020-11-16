@@ -22,11 +22,31 @@ html
             h1
                 include includes/logo.pug
                 span  / ABOUT
-            p Lorem ipsum dolor sit amet
-            p Durum pairus leventi an
+            p(style='text-align:center;').
+                Welcome to my personal webpage and portfolio. If you would like to know about my professional experience
+                in detail,
+                please visit my #[a(href='https://www.linkedin.com/in/tesarstepan') Linkedin] and
+                #[a(href='https://github.com/tesar-stepan') Github].
+
+            h4(style='text-align:center;') Present and past affiliations
+            #affiliations
+                a(href='https://www.cvut.cz/en')
+                    img(src='images/cvut.jpg')
+                a(href='https://www.ubc.ca/')
+                    img(src='images/ubc.png')
+                a(href='https://www.skipatrol.ca/')
+                    img(src='images/csp.jpg')
+                a(href='https://en.lf1.cuni.cz//')
+                    img(src='images/med.png')
+                a(href='https://orbitaltech.com/')
+                    img(src='images/orbital.png')
+                a(href='https://vrify.com/')
+                    img(src='images/vrify.png')
+                img(src='images/crbr.jpg' title='This project is no longer active')
+
 
         #image-preloader
             img(src='images/bg1')
             img(src='images/bg2')
             img(src='images/bg3')
-        include includes/footer.html
+        include includes/footer.pug

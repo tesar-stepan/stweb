@@ -50,6 +50,14 @@ body {
 #menu .menu-item:last-child {
   animation-delay: 3s;
 }
+#affiliations {
+  text-align: center;
+}
+#affiliations img {
+  max-height: 100px;
+  max-width: 33%;
+  padding: 2vw;
+}
 @-moz-keyframes carousel {
   0% {
     background-image: url("../images/bg1.jpg");

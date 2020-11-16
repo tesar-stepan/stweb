@@ -1,7 +1,7 @@
 doctype strict
 html
 
-    include includes/head.html
+    include includes/head.pug
 
     body
         #menu
@@ -12,7 +12,7 @@ html
             a.menu-item(href='art.html' title='This section is very heavy on images.') ART
         #content
             h1
-                include includes/logo.html
+                include includes/logo.pug
                 span  / TRAVEL
             .intro
                 p.
@@ -57,7 +57,7 @@ html
                 some amazing people in the Vancouver, and the global, Vanagon and VW community.
 
             .row
-                iframe(src="https://www.youtube.com/embed/4YxCn4ZdGGE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                iframe(src="https://www.youtube-nocookie.com/embed/4YxCn4ZdGGE" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
                 a(href='images/travel/van1.jpg')
                     img(src='images/travel/van1.jpg' title='Early stage of restoration')
                 a(href='images/travel/van2.jpg')
@@ -85,7 +85,7 @@ html
                 that has already been fully modded, but needed a lot of TLC.
 
             .row
-                iframe(src="https://www.youtube.com/embed/_Vlv6xL6SjA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                iframe(src="https://www.youtube-nocookie.com/embed/_Vlv6xL6SjA" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
                 a(href='images/art/photos/36.jpg')
                     img(src='images/art/photos/36.jpg' title='1982 Honda CB650')
                 a(href='images/art/photos/31.jpg')
