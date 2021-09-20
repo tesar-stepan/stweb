@@ -8,45 +8,40 @@ html
         #menu
             a.menu-item.active(href='index.html') ABOUT
             span /
-            a.menu-item(href='travel.html') TRAVEL
-            span /
-            a.menu-item(href='art.html' title='This section is very heavy on images.') ART
+            a.menu-item(href='projects.html') PROJECTS
 
         #index-text-wrap.flex-column
             #greeting
-                p Hello, I am
-                h1 Stepan Tesar
-                p#subtitle &bull; Engineer, Adventurer, Human &bull;
+                p Hello, we are
+                h1 KASEET
+                p#subtitle Transmission Tower Construction
 
         #content
             h1
-                include includes/logo.pug
-                span  / ABOUT
-            p(style='text-align:center;').
-                Welcome to my personal webpage and portfolio. If you would like to know about my professional experience
-                in detail,
-                please visit my #[a(href='https://www.linkedin.com/in/tesarstepan') Linkedin] and
-                #[a(href='https://github.com/tesar-stepan') Github].
+                span ABOUT
+            p(style='text-align:center;')
+                | Welcome to the KASEET company website, which is a work in progress.
+                | Check out our
+                a(href='projects.html') past projects
+                | , and please do feel free to contact us for more information.
+            p(style='text-align:center;')
+                | Vítejte na webových stránkách společnosti KASEET, které jsou aktuálně ve výstavbě.
+                | Podívejte se na fotografie z našich&nbsp;
+                a(href='projects.html') předchozích projektů
+                |  a neváhejte nás kontaktovat.
 
-            h4(style='text-align:center;') Present and past affiliations
-            #affiliations
-                a(href='https://www.cvut.cz/en')
-                    img(src='images/cvut.jpg')
-                a(href='https://www.ubc.ca/')
-                    img(src='images/ubc.png')
-                a(href='https://www.skipatrol.ca/')
-                    img(src='images/csp.jpg')
-                a(href='https://en.lf1.cuni.cz//')
-                    img(src='images/med.png')
-                a(href='https://orbitaltech.com/')
-                    img(src='images/orbital.png')
-                a(href='https://vrify.com/')
-                    img(src='images/vrify.png')
-                img(src='images/crbr.jpg' title='This project is no longer active')
+            hr
 
+            .flex-column(style='margin-top: 2rem')
+                h4 Tomáš Tesař, Jednatel
+                p Karla Čapka 211/1, Děčín 1
+                p Tel: 776 442 505
+                p Email:&nbsp;
+                    a(href='mailto:tesar@kaseet.cz') tesar@kaseet.cz
+                p IČ: 08683654; DIČ: CZ0868365
 
         #image-preloader
-            img(src='images/bg1.jpg')
-            img(src='images/bg2.jpg')
-            img(src='images/bg3.jpg')
+            img(src='./images/bg1.JPG')
+            img(src='./images/bg2.JPG')
+            img(src='./images/bg3.JPG')
         include includes/footer.pug
